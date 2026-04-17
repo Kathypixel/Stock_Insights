@@ -4,13 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Companies</title>
-        <link rel="stylesheet" href="style.css">
+
+        <style>
+            .parent {
+                display: flex;
+                justify-content: space-between;
+            }
+            .child {
+                width: 48%;
+                padding: 20px;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Companies</h1>
-            <p>Explore the companies we cover and their stock performance.</p>
+            <a href="/index.html">
+              <img src="logo2.png.jpg" width="20%" alt="Southern Africa Stock Insights Logo" class="logo">
+            </a>
+            <p>Where value meets opportunity</p>    
         </header>
+
+        <br>
+
+        <section>
+            <search>
+                <input type="text" placeholder="Search for stocks, companies, or trends...">
+                <button type="submit">Search</button>
+            </search>
+        </section>
+
+        <br>
 
         <nav>
             <a href="index.html">Home</a>
@@ -19,6 +45,44 @@
             <a href="companies.html">Companies</a>
             <a href="contact.html">Contact Us</a>
         </nav>
+        
+            <h1>Companies</h1>
+            <p>Explore the companies we cover and their stock performance.</p>
+        
+
+        <main>
+            <article class="parent">
+                <article class="child">
+                    <a href="https://www.apple.com"><h2>Apple Inc.</h2></a>
+                    <p>Apple is a leading player in the technology sector, known for its innovative products and strong market presence.</p>
+                </article>
+
+                <article class="child">
+                    <a href="https://www.absa.co.za"><h2>ABSA Group Limited.</h2></a>
+                    <p>ABSA is a major player in the financial services industry, offering a wide range of banking and investment products.</p>
+                </article>
+
+                <article class="child">
+                    <a href="https://www.implats.co.za"><h2>Impala Platinum Holdings Limited.</h2></a>
+                    <p>Impala Platinum is a prominent player in the mining sector, with a strong focus on customer experience and sustainability.</p>
+                </article>
+            </article>
+
+        </main>
+        
+        
+        <footer id="socials">
+            <p>Follow us on
+                <a href="https://www.facebook.com/southernafricastockinsights" target="_blank">Facebook</a>, 
+                <a href="https://www.twitter.com/southernafricastockinsights" target="_blank">Twitter</a>, 
+                <a href="https://www.linkedin.com/company/southernafricastockinsights" target="_blank">LinkedIn</a> & 
+                <a href="https://www.instagram.com/company/southernafricastockinsights" target="_blank">Instagram</a>
+            </p>
+        </footer>    
+
+        <footer id="site">
+            <p>&copy; 2026 Southern Africa Stock Insights. All rights reserved.</p>
+        </footer>
         
     </body>
 </html>

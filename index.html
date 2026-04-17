@@ -4,13 +4,41 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <link rel="stylesheet" href="style.css">
+
+
+        <style>
+            .parent {
+                display: flex;
+                justify-content: space-between;
+            }
+            .child {
+                width: 48%;
+                padding: 20px;
+                padding-top: 2px;
+                border-radius: 5px;
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <h1>Welcome to Southern Africa Stock Insights</h1>
-            <p>Your go-to source for stock market analysis and insights.</p>
+            <a href="/index.html">
+              <img src="logo2.png.jpg" width="20%" alt="Southern Africa Stock Insights Logo" class="logo">
+            </a> 
+            <p>Where value meets opportunity.</p>
         </header>
+
+        <br>
+
+        <section>
+            <search>
+                <input type="text" placeholder="Search for stocks, companies, or trends...">
+                <button type="submit">Search</button>
+            </search>
+        </section>
+
+        <br>
 
         <nav>
             <a href="index.html">Home</a>
@@ -19,6 +47,41 @@
             <a href="companies.html">Companies</a>
             <a href="contact.html">Contact Us</a>
         </nav>
+        
+            <h1>Welcome to Southern Africa Stock Insights</h1>
+            <p>Your go-to source for stock market analysis and insights.</p>
+
+
+        <main>
+            <section class="parent"> 
+                <section class="child"> 
+                    <h2>About Our Service</h2>
+                    <p>Welcome to Southern Africa Stock Insights! We provide comprehensive stock market analysis and insights for companies in the Southern Africa region.</p>
+                </section> 
+                <section class="child"">
+                    <h2>Latest Insights</h2>
+                    <p>Stay updated with the latest stock market trends and insights.</p>
+                </section>
+            </section>
+
+            <section>
+                <h2>Overview</h2>
+                <p>Discover the key features and benefits of Southern Africa Stock Insights.</p>
+            </section>
+        </main>
+
+        <footer id="socials">
+            <p>Follow us on
+                <a href="https://www.facebook.com/southernafricastockinsights" target="_blank">Facebook</a>, 
+                <a href="https://www.twitter.com/southernafricastockinsights" target="_blank">Twitter</a>, 
+                <a href="https://www.linkedin.com/company/southernafricastockinsights" target="_blank">LinkedIn</a> & 
+                <a href="https://www.instagram.com/company/southernafricastockinsights" target="_blank">Instagram</a>
+            </p>
+        </footer>
+
+        <footer id="site">
+            <p>&copy; 2026 Southern Africa Stock Insights. All rights reserved.</p>
+        </footer>
         
     </body>
 </html>
