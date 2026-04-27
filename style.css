@@ -1,1 +1,119 @@
+/*Header Style*/
+header {
+    background-color: #dccfbc;
+    padding: 5px;
+    padding-bottom: 0px;
+    text-align: center;
+    font-size : 15px;
+}
 
+/*Navigation Bar Style*/
+nav {
+    padding: 1px; 
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #6a625f;
+    text-decoration: underline;
+}
+
+/* Body Style */
+main {
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+search {
+    text-align: center;
+    padding: 2px;
+    padding-bottom: 1px;
+    position: relative;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+   
+
+/* Article Style */
+article#contact {
+    padding-right: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    text-align: center;
+}
+
+/* Form Style */
+form {
+   background-color: antiquewhite;
+}
+
+/* Footer Style */
+footer#site {
+    background-color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer#socials {
+    margin: 10px 0;
+    font-size: 14px;
+    border-color: white;
+}
+
+/* Section Style */
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #f3f3e7;
+}
+
+.grid-element {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+}
+
+li {
+    text-align: left;
+    strong {
+        text-decoration: underline;
+    }
+}
+
+/* Script.js Style */
