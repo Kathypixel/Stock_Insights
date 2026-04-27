@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stockdata" href="script.js">
 
         <style>
             .parent {
@@ -22,18 +24,19 @@
     <body>
         <header>
             <a href="/index.html">  
-              <img src="logo2.png.jpg" width="20%" alt="Southern Africa Stock Insights Logo" class="logo">
+              <img src="logo2.png" width="20%" alt="Southern Africa Stock Insights Logo" class="logo">
             </a>  
             <p>"Where value meets opportunity"</p>
         </header>
 
         <br>
 
-        <section>
-            <search>
-                <input type="text" placeholder="Search for stocks, companies, or trends...">
-                <button type="submit">Search</button>
-        </section>
+            <aside>
+              <search>
+                  <input type="text" placeholder="Search for stocks, companies, or trends...">
+                  <button type="submit">Search</button>
+              </search>
+            </aside>
 
         <br>
 
@@ -44,14 +47,14 @@
             <a href="companies.html">Companies</a>
             <a href="contact.html">Contact Us</a>
         </nav>
-
-            <h1>Dashboard</h1> 
-            <p>Get the latest stock market insights and trends.</p>
-            
-    <main>
+            <section>
+                 <h1>Dashboard</h1> 
+                 <p>Get the latest stock market insights and trends.</p>
+            </section> 
+        <main>
            <article class="parent">
               <article class="child">
-                <h2>Stock News & Prices</h2>
+                <h2>Stock News</h2>
                 <p>Stay updated with the latest stock news and real-time price updates.</p>
               </article>
               <article class="child">
@@ -60,12 +63,23 @@
               </article>
            </article>
 
-           <section>
-                <h2>Market Trends</h2>
-                <p>Stay updated with the latest market trends and insights.</p>
-           </section>
+            <section>
+                 <h1>Market Trends</h1>
 
-    </main>
+                <div id="stock-container">
+                    <!--Stock cards will be added here by JS-->
+                </div>   
+
+                    <div class="project-grid">
+                        <div class="project-card">
+                             <h4>Closing Price Chart</h4>
+                             <p>Stay updated with the latest market trends and insights.</p>
+                        </div>
+                    </div> 
+
+            </section>
+
+        </main>
 
         <footer id="socials">
             <p>Follow us on
@@ -79,5 +93,8 @@
         <footer id="site">
             <p>&copy; 2026 Southern Africa Stock Insights. All rights reserved.</p>
         </footer>    
+        
+      <link rel="stockdata" href="script.js">
     </body>
 </html>
+
