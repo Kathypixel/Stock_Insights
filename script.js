@@ -1,45 +1,86 @@
 //Static Stock Data
-const stockData = [
-    { 
-        company: "Apple Inc.",
-        price: "$150.00",
-        change: "+1.5%",
-        volume: "10M"
+const ctx1 = document.getElementById('myChart1');
+  
+  new Chart(ctx1, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: 'Stock Price',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
     },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 
-
-    { 
-        company: "Impala Platinum Holdings",
-        price: "$280.00",
-        change: "+2.0%",
-        volume: "5M"
+  const ctx2 = document.getElementById('myChart2');
+  
+  new Chart(ctx2, {
+    type: 'line',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: 'Stock Performance',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
     },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 
-    { 
-        company: "ABSA Group Limited",
-        price: "$3,400.00",
-        change: "-1.2%",
-        volume: "2M"
+
+  const ctx3 = document.getElementById('myChart3');
+  
+  new Chart(ctx3, {
+    type: 'polarArea',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
     },
-]; 
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
 
-//Get Container From HTML
-const container = 
-document.getElementById("stock-container");
 
-//Display Each Stock Data
-stockData.forEach(stock => {
-    const card = document.createElement("div");
-    card.className = "stock-card"; 
-
-    card.innerHTML = `
-        <h3>${stock.company} (${stock.symbol})</h3>
-        <p>Price: \$${stock.price}</p>
-        <p class="${stock.change>=0 ? 'positive' : 'negative'}">
-          Change: ${stock.change} 
-        </p>
-        <p>Volume: ${stock.volume}</p>
-    `;
-
-    container.appendChild(stockCard);
-});
+  const ctx4 = document.getElementById('myChart4');
+  
+  new Chart(ctx4, {
+    type: 'doughnut',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: 'Per Company',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
